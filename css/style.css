@@ -15,14 +15,110 @@
     font-size: 20px;
     font-style: italic;
 }
-#game{
+#content {
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    /* justify-content: center; */
+    gap: 20px;
+}
+
+#self{
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    /* justify-content: center; */
+    gap: 20px;
+}
+
+#yt{
+    height:500px;
+    width:250px;
+    background-color: grey;
+    border-radius: 10px;
+    background-image: url(/img/yt.webp);
+    background-size: cover;
+    margin-top: 20px;
+    background-color: #121212;
+    border: 2px solid transparent;
+    transition: 0.3s ease;
+}
+
+#game {
     height:500px;
     width:250px;
     background-color: grey;
     border-radius: 10px;
     background-image: url(/img/val.webp);
     background-size: cover;
+    margin-top: 20px;
+    background-color: #121212;
+    border: 2px solid transparent;
+    transition: 0.3s ease;
 }
-#gap{
-    height:10px
+
+#game1{
+    height:500px;
+    width:250px;
+    background-color: grey;
+    border-radius: 10px;
+    background-image: url(/img/minecraft.webp);
+    background-size: cover;
+    margin-top: 20px;
+    background-color: #121212;
+    border: 2px solid transparent;
+    transition: 0.3s ease;
+}
+
+#game2{
+    height:500px;
+    width:250px;
+    background-color: grey;
+    border-radius: 10px;
+    background-image: url(/img/chess.webp);
+    background-size: cover;
+    margin-top: 20px;
+    background-color: #121212;
+    border: 2px solid transparent;
+    transition: 0.3s ease;
+}
+
+#game:hover {
+    border: 2px solid #FF4655 ;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+#game1:hover {
+    border: 2px solid #55FF55;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+#game2:hover {
+    border: 2px solid #50C878;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+#val {
+    color: #FF4655;
+    font-size: 70px;
+    text-decoration: none;
+}
+
+#mine{
+    color: white;
+    font-size: 63px;
+    text-decoration: none;
+}
+
+#chess{
+    color: #50C878;
+    font-size: 100px;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
 }
