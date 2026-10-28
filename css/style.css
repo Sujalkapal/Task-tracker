@@ -4,30 +4,46 @@
     justify-content: space-around;
     align-items: center;
     gap: 20px;
-    background-color: rgb(71, 63, 63);
+    background-color: #24252B;
     padding: 15px;
     border-radius: 10px;
 }
 
+body {
+    background: linear-gradient(135deg, #101114, #1B1C22);
+    color: white;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+}
+
 .navbar a {
     text-decoration: none;
-    color: rgb(210, 200, 200);
+    color: #E2E2E8;
     font-size: 20px;
     font-style: italic;
 }
 #content {
     display: flex;
     flex-direction: row;
-    /* align-items: center; */
-    /* justify-content: center; */
+    align-items: center;
+    justify-content: center;
     gap: 20px;
 }
 
 #self{
     display: flex;
     flex-direction: row;
-    /* align-items: center; */
-    /* justify-content: center; */
+    align-items: center; 
+     justify-content: center;
+    gap: 20px;
+}
+
+#college{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     gap: 20px;
 }
 
@@ -164,6 +180,92 @@
     transition: 0.3s ease;
 }
 
+/* College Section Divider */
+
+.college-divider {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 35px 0 10px;
+    color: #4DA6FF;
+}
+
+.college-divider::before,
+.college-divider::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #4DA6FF);
+}
+
+.college-divider::after {
+    background: linear-gradient(to left, transparent, #4DA6FF);
+}
+
+.college-divider h2 {
+    font-size: 22px;
+    letter-spacing: 5px;
+    margin: 0;
+}
+
+.college-divider span {
+    font-size: 20px;
+}
+
+/* College */
+
+#classroom{
+    height:500px;
+    width:250px;
+    background-color: grey;
+    border-radius: 10px;
+    background-image: url(/img/gc.png);
+    background-size: cover;
+    margin-top: 20px;
+    background-color: #121212;
+    border: 2px solid transparent;
+    transition: 0.3s ease;
+}
+
+#chatgpt{
+    height:500px;
+    width:250px;
+    background-color: grey;
+    border-radius: 10px;
+    background-image: url(/img/cg.png);
+    background-size: cover;
+    margin-top: 20px;
+    background-color: #121212;
+    border: 2px solid transparent;
+    transition: 0.3s ease;
+}
+
+#claude{
+    height:500px;
+    width:250px;
+    background-color: grey;
+    border-radius: 10px;
+    background-image: url(/img/cl.png);
+    background-size: cover;
+    margin-top: 20px;
+    background-color: #121212;
+    border: 2px solid transparent;
+    transition: 0.3s ease;
+}
+
+#github{
+    height:500px;
+    width:250px;
+    background-color: grey;
+    border-radius: 10px;
+    background-image: url(/img/gh.png);
+    background-size: cover;
+    margin-top: 20px;
+    background-color: #121212;
+    border: 2px solid transparent;
+    transition: 0.3s ease;
+}
+
 /*Hover Effects */
 
 #game:hover {
@@ -192,6 +294,30 @@
 
 #crunchyroll:hover {
     border: 2px solid #F47521;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+#classroom:hover {
+    border: 2px solid #F4B400;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+#chatgpt:hover {
+    border: 2px solid white;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+#claude:hover {
+    border: 2px solid #F5F0E8;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+#github:hover {
+    border: 2px solid #F5F0E8;
     transform: scale(1.05);
     cursor: pointer;
 }
@@ -225,6 +351,30 @@
 #cr{
     color: black;
     font-size: 52px;
+    text-decoration: none;
+}
+
+#gc{
+    color: black;
+    font-size: 52px;
+    text-decoration: none;
+}
+
+#gpt{
+    color: white;
+    font-size: 65px;
+    text-decoration: none;
+}
+
+#cl{
+    color: #D97757;
+    font-size: 65px;
+    text-decoration: none;
+}
+
+#git{
+    color: #238636;
+    font-size: 65px;
     text-decoration: none;
 }
 
