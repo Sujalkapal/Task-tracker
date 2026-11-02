@@ -266,6 +266,38 @@ body {
     transition: 0.3s ease;
 }
 
+/* Workout section divider */
+.workout-divider {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 35px 0 10px;
+    color: white
+    ;
+}
+
+.workout-divider::before,
+.workout-divider::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #F47521);
+}
+
+.workout-divider::after {
+    background: linear-gradient(to left, transparent, #F47521);
+}
+
+.workout-divider h2 {
+    font-size: 22px;
+    letter-spacing: 5px;
+    margin: 0;
+}
+
+.workout-divider span {
+    font-size: 20px;
+}
+
 /*Hover Effects */
 
 #game:hover {
